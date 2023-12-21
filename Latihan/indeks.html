@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Mitra</title>
+</head>
+<body>
+    <nav>
+        <img src="" alt="logo" class="logo"/>
+        <ui class="hidden" id="navbar">
+            <a href="#" class="nav-item home" id="home">Home</a>
+            <a href="#our-Profil" class="nav-item" id="ourProfile">Our Profil</a>
+            <a href="#vision" class="nav-item" id="visionMission">Vision</a>
+            <a href="#messge-us" class="nav-item message" id="message">Messages Us</a>
+        </ui>
+        <img
+            src="assets/sekolah.jpg"
+            alt="my-Profil"
+            class="my-Profil"
+            id="my-Profil"
+        />
+    </nav>
+
+    <header>
+        <h1>Hi <span id="halo-nama"></span>, Welcome to our Website</h1>
+        <h4>School for workers</h4>
+        <img 
+            src="assets/sekolah.jpg"
+            alt="School"
+            class="School-building"
+        />
+    </header>
+
+    <!== Our Profil==>
+
+    <section class="our-Profile" id="our-Profile">
+        <h2>Our Profil</h2>
+        <div class="List-profil">
+            <div class="Profil">
+                <img src="assets/kantin.jpg" alt="canteen"/>
+                <p>canteen</p>
+            </div>
+
+            <div class="Profil">
+                <img src="assets/lapangan.jpg" alt="field"/>
+                <p>field</p>
+            </div>
+
+            <div class="Profil">
+                <img src="assets/laboratorium.jpg" alt="lab"/>
+                <p>Laboratory</p>
+            </div>
+
+            <div class="Profil">
+                <img src="assets/keren.jpg" alt="class"/>
+                <p>Classromm</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision">
+        <img src="assets/sekolah.jpg" alt="vision" class="vision"/>
+        <div class="visimisi">
+            <div class="text">
+                <h3>Our Vision</h3>
+                <p>
+                    siap membangun karakter yang lebih unggul
+                </p>
+            </div>
+            <div class="text">
+                <h3>Our Mision</h3>
+                <ol type="1">
+                    <li>Academic Exellenct</li>
+                    <li>Character Development</li>
+                    <li>Inovation and creativity</li>
+                    <li>Global Perspective</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!== Message Us ==>
+
+    <section class="message" id="message-us">
+        <h2>Message Us</h2>
+        <div class="message-us">
+            <form name="message-form" onsubmit="return validateForm()">
+                <table>
+                    <tr>
+                        <td class="col-1"><p>Nama</p></td>
+                        <td class="col-2"><p> : </p></td>
+                        <td class="col-3">
+                            <input
+                                id="nama"
+                                type="text"
+                                placeholder="nama"
+                                name="nama"
+                                required
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-1"><p>Tanggal Lahir</p></td>
+                        <td class="col-2"><p> : </p></td>
+                        <td class="col-3">
+                            <input
+                                id="date"
+                                type="date"
+                                class="tanggal"
+                                name="tanggal"
+                                required
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-1"><p>jenis-kelamin</p></td>
+                        <td class="col-2"><p> : </p></td>
+                        <td class="col-3">
+                            <input
+                                id="gender"
+                                type="radio"
+                                value="Laki-Laki"
+                                class="gender"
+                                name="kelamin"
+                                required
+                            />
+                            Laki-Laki
+                            <input
+                                id="gender"
+                                type="radio"
+                                value="Permpuan"
+                                class="gender"
+                                name="kelamin"
+                                required
+                            />
+                            Permpuan
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-1" style="vertikal-align:top"><p>Pesan</p></td>
+                        <td class="col-2" style="vertikal-align:top"><p> : </p></td>
+                        <td class="col-3">
+                            <textarea
+                                id="pesan"
+                                cols="50"
+                                rows="10"
+                                required
+                            ></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="submit" class="submit-button" id="submit">
+            </form>
+            <div class="return" id="return">
+                <div class="returnText" id="returnText">
+                    <p class="point">current time :<span id="time-api"></span></p>
+                    <br />
+                    <p class="point">Nama : <span id="sender-name"></span></p>
+                    <p class="point">Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                    <p class="point">jenis-kelamin : <span id="sender-gender"></span></p>
+                    <p class="point">Pesan : <span id="sender-message"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Create By Shafwan A</p>
+    </footer>
+
+    <!== Java Script ==>>
+    <script src="JS/script.js"></script>
+</body>
+</html>

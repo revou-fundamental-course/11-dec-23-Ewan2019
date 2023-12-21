@@ -1,0 +1,198 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid #8d8d8d;
+    top: 0;
+    position: fixed;
+    width: 100px;
+}
+
+.logo {
+    width: 12rem;
+}
+
+nav #navbar {
+    list-style-type:none ;
+    margin-right: 5rem;
+    padding: 2rem;
+}
+
+.nav-item {
+    display: inline;
+    padding: 2rem;
+    border: 1px solid #8d8d8d;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #2e2e2e;
+}
+
+.nav-item:hover,
+.submit-button:hover{
+    cursor: pointer;
+    background-color: #c9c9c9;
+    transition: 0.2s;
+}
+
+.my-Profil {
+    margin-right: 2rem;
+    max-width: 5rem;
+    display: none;
+    cursor: pointer;
+}
+
+#home{
+    border-start-start-radius: 1rem;
+    border-end-start-radius: 1rem;
+}
+
+#message {
+    border-end-start-radius: 1rem;
+    border-start-start-radius: 1rem;
+}
+
+header{
+    margin-top: 17rem;
+    text-align: center;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #8d8d8d;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+h4{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.school-building {
+    height: 50vh;
+    width: 90vw;
+    object-fit: cover;
+    margin-top: 3rem;
+    border-radius: 2rem;
+}
+
+.our-profile {
+    padding: 12rem;
+    display: inline;
+}
+
+.our-profile h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.list-profile {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.profile {
+    margin: 0 2rem 0 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.profile > img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.2rem solid #8d8d8d;
+}
+
+.visimisi {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text h3 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.text p,
+.text li {
+    font-size: 1.2rem;
+}
+
+ol li {
+    text-align: start;
+}
+
+.message {
+    border-top: 1px solid #8d8d8d;
+}
+
+.message-us {
+    display: flex;
+    justify-content: space-around;
+}
+
+.message h2{
+    font-size: 3rem;
+    margin-left: 10%;
+}
+
+.col-2 {
+    font-weight: 500;
+}
+
+.col-3 {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+#name,
+#date,
+#pesan {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+}
+
+#pesan {
+    border-radius: 0.6rem;
+    width: 100%;
+    height: 10rem;
+}
+
+#submit-btn {
+    margin-top: 1rem;
+    height: 3rem;
+    width: 100%;
+}
+
+@media (max-width: 760px) {
+    .visimisi,
+    .message-us {
+        display: inline;
+    }
+}
+
+.return {
+    margin-left: 0;
+    margin-top: 3rem;
+    width: 100%;
+    min-height: 20rem;
+}
